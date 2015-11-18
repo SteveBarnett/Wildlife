@@ -1,0 +1,78 @@
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.svg-meerkat-dims {
+    width: 24px;
+    height: 44.43px;
+}
+
+.svg-black-rhino-dims {
+    width: 99.38px;
+    height: 51px;
+}
+
+.svg-elephant-dims {
+    width: 135.49px;
+    height: 87px;
+}
+
+.tall-wildlife-icon-wrapper {
+    height: 145px;
+}
+
+.short-wildlife-icon-wrapper {
+    height: 70px;
+}
+
+@media (max-width: 767px) {
+  .wildlife-icon {
+      width: 100%!important;
+  }
+}
+
+.wildlife-icon {
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* changed */
+
+.wildlife-icon {
+    bottom: 3em;
+}
+
+/*new stuff*/
+
+.wildlife-abundance {
+  list-style: none;
+}
+
+[data-wildlife-abundance] {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /* fake col-xs-4 */
+  width: 33.33333%;
+  float: left;
+}
+
+[data-wildlife-abundance="none"] svg {
+    fill: #cdcccc;
+}
+
+[data-wildlife-abundance="rare"] svg {
+    fill: #d0b48c;
+}
+
+[data-wildlife-abundance="abundant"] svg {
+    fill: #5b8c4e;
+}
+
+.wildlife-abundance-value {
+  display: none;
+}
